@@ -1,28 +1,28 @@
 # Simple Login Page Using React
-A minimal full-stack application built to verify that a React development environment is working correctly.
-The project features a React front-end and a Spring Boot back-end that handles user authentication by validating usernames and passwords.
 
-User data is stored in a MySQL database configured through the XAMPP phpMyAdmin panel.
+A minimal full-stack application built to verify that a React development environment is functioning correctly.
+The project features a React front-end and a Spring Boot back-end responsible for validating user credentials.
 
-__Features__
+User information is stored in a MySQL database configured using the XAMPP phpMyAdmin panel.
+
+#Features
+
 React-based login interface
 
-Spring Boot REST API for authentication
+Spring Boot REST API for user authentication
 
-MySQL database for user storage
+MySQL database for storing user data
 
 Basic username/password validation
 
 Simple project structure ideal for testing full-stack connectivity
 
+#Tech Stack
 
-__Tech Stack__
 Front-end: React
-
 Back-end: Spring Boot
-
 Database: MySQL (XAMPP / phpMyAdmin)
 
+#Purpose
 
-__Purpose__
-This project serves as a testing environment to verify proper integration between client, server, and database layers during development.
+This project serves as a testing environment to verify proper integration between the client, server, and database layers during development.
