@@ -1,0 +1,34 @@
+Prerequisites
+
+1. XAMPP
+2. React
+3. IDE to handle spring boot files
+
+
+Step 1: Create a database using XAMPP mysql admin panal
+
+Past in the following query to create the database, tables and insert the user credentials
+
+CREATE DATABASE login_db;
+
+USE login_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(50) NOT NULL
+);
+
+INSERT INTO users (username, password) VALUES ('admin', 'admin123');
+
+
+Step 2: Initate the back-end
+
+Run LoginNewApplication.java file in src\main\java\com\example\login_new\LoginNewApplication.jav using any IDE such as Intellij.
+
+
+Step 3: Intiate react webpage
+
+Navigate to login-frontend folder and open it on terminal.
+Run the following command to start the react local page: 	npm run dev
+
