@@ -1,3 +1,4 @@
+<div>
 <h1> 🔥 Simple Login Page Using React </h1>
 
 <p><b> 
@@ -12,7 +13,7 @@ User information is stored in a MySQL database configured using the XAMPP phpMyA
    <a href="#tech-stack">Tech Stack</a> •
    <a href="#about">Purpose</a> •
 </h4>
-
+</div>
 
 <br />
 
