@@ -7,7 +7,14 @@ The project features a React front-end and a Spring Boot back-end responsible fo
 </br>
 User information is stored in a MySQL database configured using the XAMPP phpMyAdmin panel.
 
-<br/>
+<h4>
+   <a href="#features">Features</a> •
+   <a href="#tech-stack">Tech Stack</a> •
+   <a href="#about">Purpose</a> •
+</h4>
+
+
+<br />
 
 ##🪶 Features
 
