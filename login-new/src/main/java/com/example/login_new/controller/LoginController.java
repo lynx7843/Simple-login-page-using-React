@@ -14,7 +14,7 @@ public class LoginController {
     private UserRepository userRepository;
 
     @PostMapping("/login")
-    public String login(@RequestBody User loginRequest) {
+    public String login(@RequestBody User loginRequest){
         User user = userRepository.findByUsername(loginRequest.getUsername());
 
         if (user != null && user.getPassword().equals(loginRequest.getPassword())) {
@@ -22,5 +22,16 @@ public class LoginController {
         } else {
             return "Invalid Credentials";
         }
+    }
+
+    // user register patch
+    @PostMapping("/register")
+    public String register(@RequestBody User newUser){
+        if (userRepository.findByUsername(newUser.getUsername())!=null){
+            return "Username exists";
+        }
+
+        userRepository.save(newUser);
+        return "Successfull";
     }
 }

@@ -24,7 +24,7 @@ INSERT INTO users (username, password) VALUES ('admin', 'admin123');
 
 Step 2: Initate the back-end
 
-Run LoginNewApplication.java file in src\main\java\com\example\login_new\LoginNewApplication.jav using any IDE such as Intellij.
+Run LoginNewApplication.java file at D:\dev\login-new\login-new\src\main\java\com\example\login_new\LoginNewApplication.jav using any IDE such as Intellij.
 
 
 Step 3: Intiate react webpage
