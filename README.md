@@ -1,18 +1,18 @@
 <div>
 <h1> 🔥 Simple Login Page Using React </h1>
 
-<p><b> 
+<p><b>
 A minimal full-stack application built to verify that a React development environment is functioning correctly.
 The project features a React front-end and a Spring Boot back-end responsible for validating user credentials.
-</p></b>
-</br>
-User information is stored in a MySQL database configured using the XAMPP phpMyAdmin panel.
+</b></p>
+<br />
+<p>User information is stored in a MySQL database configured using the XAMPP phpMyAdmin panel.</p>
 
 <h4>
-   <a href="#features">Features</a> •
-   <a href="#tech-stack">Tech Stack</a> •
-   <a href="#setup">SetUp</a> •
-   <a href="#about">Purpose</a> •
+   <a href="#-features">Features</a> •
+   <a href="#️-tech-stack">Tech Stack</a> •
+   <a href="#️-setup">Setup</a> •
+   <a href="#-purpose">Purpose</a>
 </h4>
 </div>
 
@@ -33,29 +33,29 @@ User information is stored in a MySQL database configured using the XAMPP phpMyA
 
 ## 🛠️ Setup
 
-Create a database using phpMyAdmin panel
-'''bash
+Create a database using phpMyAdmin panel:
+```sql
 CREATE DATABASE login_db;
-''''
+```
 
-Create a table
-'''bash
+Create a table:
+```sql
 CREATE TABLE users (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL
 );
-''''
+```
 
-Initiate Spring Boot
-'''bash
+Initiate Spring Boot:
+```bash
 ./mvnw spring-boot:run
-''''
+```
 
-Initiate front-end
-'''bash
+Initiate front-end:
+```bash
 npm run dev
-''''
+```
 
 ## ✨ Purpose
 
