@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Login.css'; // Re-using the CSS from Login
+import './Login.css'; 
 
-const Register = () => {
+const Register = ({ onSwitch }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
@@ -10,7 +10,6 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            // Notice the endpoint is now /register
             const response = await axios.post('http://localhost:8080/api/register', {
                 username: username,
                 password: password
@@ -22,11 +21,11 @@ const Register = () => {
     };
 
     return (
-        <div className="login-container">
+        <div className="auth-container">
             <h2>Register New User</h2>
-            <form onSubmit={handleRegister}>
-                <div>
-                    <label>Username:</label>
+            <form className="auth-form" onSubmit={handleRegister}>
+                <div className="input-group">
+                    <label>Username</label>
                     <input 
                         type="text" 
                         value={username} 
@@ -34,8 +33,8 @@ const Register = () => {
                         required 
                     />
                 </div>
-                <div>
-                    <label>Password:</label>
+                <div className="input-group">
+                    <label>Password</label>
                     <input 
                         type="password" 
                         value={password} 
@@ -43,9 +42,14 @@ const Register = () => {
                         required 
                     />
                 </div>
-                <button type="submit" style={{backgroundColor: '#007bff'}}>Register</button>
+                <button type="submit" className="auth-button">Register</button>
             </form>
             {message && <p className="message">{message}</p>}
+
+            <div className="switch-prompt">
+                Already have an account? 
+                <button className="switch-btn" onClick={onSwitch}>Login here</button>
+            </div>
         </div>
     );
 };
