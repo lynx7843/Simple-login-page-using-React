@@ -63,6 +63,6 @@ This project serves as a testing environment to verify proper integration betwee
 
 ## 📷 Preview
 
-<p align="center">
+<p>
 <img src="./img/1.png" alt="Login Page Preview" width="800" />
 </p>
