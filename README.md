@@ -60,3 +60,9 @@ npm run dev
 ## ✨ Purpose
 
 This project serves as a testing environment to verify proper integration between the client, server, and database layers during development.
+
+## 📷 Preview
+
+<p align="center">
+<img src="./img/1.png" alt="Login Page Preview" width="800" />
+</p>
